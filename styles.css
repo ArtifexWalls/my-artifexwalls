@@ -58,7 +58,7 @@ body {
     background-color: gold;
     color: white;
     border: none;
-    border-radius: 30px;
+    border-radius: 5px;
     cursor: pointer;
     text-decoration: none;
     font-size: 1.2rem;
@@ -70,18 +70,18 @@ body {
 
 /* Wallpaper Grid */
 .wallpaper-section {
-    padding: 60px;
+    padding: 20px;
     background-color: #fff;
 }
 .section-title {
     font-size: 2.5rem;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 .wallpaper-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    gap: 15px;
 }
 .wallpaper-item {
     position: relative;
@@ -96,8 +96,8 @@ body {
 }
 .wallpaper-info {
     position: absolute;
-    bottom: 20px;
-    left: 20px;
+    bottom: 0;
+    left: 0;
     color: white;
 }
 .wallpaper-info h3 {
