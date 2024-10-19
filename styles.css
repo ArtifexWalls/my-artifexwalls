@@ -1,0 +1,127 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+    color: #333;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5f5f5;
+}
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    z-index: 1;
+}
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+.hero-title {
+    font-size: 4rem;
+    color: #000;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.hero-tagline {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 40px;
+}
+.btn-primary {
+    padding: 10px 20px;
+    background-color: gold;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+.btn-primary:hover {
+    transform: scale(1.05);
+}
+
+/* Wallpaper Grid */
+.wallpaper-section {
+    padding: 60px;
+    background-color: #fff;
+}
+.section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.wallpaper-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+.wallpaper-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.wallpaper-preview {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+.wallpaper-info {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+}
+.wallpaper-info h3 {
+    font-size: 1.2rem;
+}
+.btn-secondary {
+    padding: 8px 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1rem;
+}
+.wallpaper-item:hover .wallpaper-preview {
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #777;
+}
